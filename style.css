@@ -19,7 +19,7 @@ body{
     position: relative;
 }
 
-.button-container .send-button{
+.send-button{
     position: relative;
     z-index: 1;
     width: 100%;
@@ -28,13 +28,13 @@ body{
     border: none;
     outline: none;
     border-radius: 50%;
-    background: #1E74F6;
+    background: #6979F8;
     box-shadow: 8px 8px 40px -12px rgba(0, 0, 0, 1);
     overflow: hidden;
     cursor: pointer;
     
 }
-.button-container .send-button .icon-container{
+.icon-container{
     position: absolute;
     left: 0;
     top: 0;
@@ -45,81 +45,60 @@ body{
     justify-content: center;
 }
   
-.button-container .send-button .icon-container .arrow-icon{
+.arrow-icon{
     width: 50%;
     height: auto;
     fill: white;
+    padding-left: 10%;
+    padding-top: 5%;
 }
 
-.button-container .send-button .icon-container .plus-icon{
+.plus-icon{
     height: auto;
     fill: white;
 }
 
-.button-container .button-menu{
+.button-menu{
     position: absolute;
     z-index: 0;
     left: 50%;
     bottom: 1px;
     transform: translateX(-50%);
-  
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    background-color: #1A256D;
+    list-style-type:none;
+    background-color: #6979F8;
     overflow: hidden;
     visibility: hidden;
+    display: flex;
 }
-.button-container .button-menu li{
+.button-menu li{
     white-space: nowrap;
 } 
-.button-container .button-menu li a{
-    display: flex;
-    align-items: flex-end;
+.button-menu li a{
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.15rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
     color: white;
-    padding: 0.8rem 1.2rem;
-    white-space: nowrap;
+    padding: 0.4rem 0.8rem;
     text-decoration: none;
     overflow: hidden;
 }
-.button-container .button-menu li a span{
+.button-menu li a span{
     display: inline-block;
+    background-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    color: #6979F8;
     opacity: 0;
-}
+    padding: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
 
-.button-container .button-menu li a .list-icon-container{
-    position: relative;
-    width: 1.5rem;
-    min-width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 15px;
-}
-.button-container .button-menu li a .list-icon-container svg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    width: 2.2rem;
-    height: auto;
-}
-    
-.button-container .button-menu li a .list-icon-container svg .path{
-    fill: none;
-    stroke: white;
-    stroke-width: 1.5;
-    stroke-miterlimit: 10;
-}
-  
-.button-container .button-menu li a .list-icon-container svg .line{
-    fill: none;
-    stroke: white;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
 }
