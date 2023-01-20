@@ -1,0 +1,125 @@
+html{
+    font-size: 16px;
+}
+
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container{
+    width: 4.8rem;
+    height: 4.8rem;
+    position: relative;
+}
+
+.button-container .send-button{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #1E74F6;
+    box-shadow: 8px 8px 40px -12px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.button-container .send-button .icon-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.button-container .send-button .icon-container .arrow-icon{
+    width: 50%;
+    height: auto;
+    fill: white;
+}
+
+.button-container .send-button .icon-container .plus-icon{
+    height: auto;
+    fill: white;
+}
+
+.button-container .button-menu{
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+  
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #1A256D;
+    overflow: hidden;
+    visibility: hidden;
+}
+.button-container .button-menu li{
+    white-space: nowrap;
+} 
+.button-container .button-menu li a{
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    white-space: nowrap;
+    text-decoration: none;
+    overflow: hidden;
+}
+.button-container .button-menu li a span{
+    display: inline-block;
+    opacity: 0;
+}
+
+.button-container .button-menu li a .list-icon-container{
+    position: relative;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 15px;
+}
+.button-container .button-menu li a .list-icon-container svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.2rem;
+    height: auto;
+}
+    
+.button-container .button-menu li a .list-icon-container svg .path{
+    fill: none;
+    stroke: white;
+    stroke-width: 1.5;
+    stroke-miterlimit: 10;
+}
+  
+.button-container .button-menu li a .list-icon-container svg .line{
+    fill: none;
+    stroke: white;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
